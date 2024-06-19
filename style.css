@@ -1,0 +1,98 @@
+.checklist {
+    font-family: 'Inter';
+    display: flex;
+    width: 743px;
+    height: 91px;
+    background: #3579F5;
+    border-radius: 10px 10px 10px 10px;
+}
+
+:root {
+    --arc-length: 0.4;
+}
+
+.checklist__progress-bar {
+    position: relative;
+    width: 98px;
+}
+
+.checklist__full-progress-circle {
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    background-color: rgba(0, 0, 0, 0.0); 
+    top: 16px;
+    left: 22px;
+    border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    -moz-border-radius: 31px 31px 31px 31px;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.checklist__filled-progress-circle svg circle {
+  position: absolute;
+  z-index: 2;
+  fill:none;
+  stroke-width:2px;
+  stroke-dasharray: 185;
+  stroke-linecap:round;
+  stroke-dashoffset:calc(185 - 185 * var(--arc-length));
+  stroke:#FFFFFF;
+}
+
+.checklist__progress-circle-steps {
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 20px;
+    top: 34px;
+    left: 22px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.checklist__info {
+    width: 457px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+.checklist__name {
+    width: 76px;
+    height: 16px;
+    text-align: center;
+    background: #2364DB;
+    border-radius: 40px 40px 40px 40px;
+    padding-top: 2px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.checklist__progress-steps {
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.checklist__next-step {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+.checklist__button button{
+    margin-top: 26px;
+    padding: 10px, 32px, 10px, 32px;
+    width: 170px;
+    height: 40px;
+    font-family: 'Inter';
+    font-size: 14px;
+    color:  #4777ED;
+    background: #F4F8FF;
+    border: none;
+    border-radius: 6px 6px 6px 6px;
+}
